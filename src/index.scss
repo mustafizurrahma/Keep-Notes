@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(255, 0, 157, 0.925),
+      rgba(255, 136, 0, 0.904)
+    ),
+    url(./Components/img/BodyBg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 3;
+}
+h1,
+h2,
+img,
+a,
+button {
+  user-select: none;
+}
+textarea {
+  resize: none;
+}
+#Container {
+  width: 950px;
+  margin: auto;
+}
+nav {
+  background: linear-gradient(to right, rgb(255, 0, 157), rgb(255, 136, 0));
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgb(0, 255, 242);
+  #HeaderOcntentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    #Logo {
+      width: 50px;
+      img {
+        width: 100%;
+      }
+    }
+    #headerTitle {
+      h2 {
+        font-family: 'Yusei Magic', sans-serif;
+        color: white;
+        text-shadow: 1px 2px 1px black;
+      }
+    }
+  }
+}
+#Main {
+  padding: 30px 0px;
+  #MainContentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 683px;
+    height: 350px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px 10px;
+    z-index: 8;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 157, 0.815),
+      rgba(255, 136, 0, 0.863)
+    );
+    #InputField {
+      margin: 10px 0px;
+      width: 637.188px;
+      z-index: 8;
+
+      input {
+        width: 100%;
+        padding: 5px 5px;
+        outline: none;
+        border-radius: 5px;
+        font-family: 'Yusei Magic', sans-serif;
+        font-size: 1.5rem;
+        box-shadow: inset 1px 1px 4px rgb(34, 34, 34);
+        z-index: 8;
+        text-transform: capitalize;
+        border: none;
+      }
+      textarea {
+        width: 100%;
+        padding: 10px 5px;
+        outline: none;
+        border-radius: 5px;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.3rem;
+        box-shadow: inset 1px 1px 4px rgb(34, 34, 34);
+        z-index: 8;
+        border: none;
+      }
+    }
+  }
+}
+#Note {
+  padding: 30px 0px;
+  #NoteContentWrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    #SingleNote {
+      display: grid;
+      align-items: center;
+      width: 300px;
+      padding: 20px 10px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: inset 0px 1px 10px 0px #585858;
+      margin: 20px 5px;
+      z-index: 8;
+      h2 {
+        font-size: 3rem;
+        font-family: 'Yusei Magic', sans-serif;
+        text-align: center;
+        background: linear-gradient(to left, red, blue);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 45px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+      p {
+        font-size: 1.5rem;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+      }
+    }
+  }
+}
+#BG {
+  position: fixed;
+  bottom: 30%;
+  left: 0;
+  z-index: 1;
+  width: 200px;
+  margin: 20px 50px;
+  img {
+    width: 100%;
+    opacity: 0.5;
+    animation: Bg 3s ease infinite alternate;
+    @keyframes Bg {
+      from {
+        transform: translateY(-20px);
+      }
+      to {
+        transform: translateY(20px);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  #Container {
+    width: 90%;
+  }
+  #MainContentWrapper {
+    width: 90vw !important;
+    #InputField {
+      width: 80vw !important;
+    }
+  }
+  #BG {
+    display: none !important;
+  }
+}

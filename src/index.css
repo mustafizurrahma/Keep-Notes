@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 157, 0.925)), to(rgba(255, 136, 0, 0.904))), url(./Components/img/BodyBg.jpg);
+  background: linear-gradient(to right, rgba(255, 0, 157, 0.925), rgba(255, 136, 0, 0.904)), url(./Components/img/BodyBg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 3;
+}
+
+h1,
+h2,
+img,
+a,
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+textarea {
+  resize: none;
+}
+
+#Container {
+  width: 950px;
+  margin: auto;
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, right top, from(#ff009d), to(#ff8800));
+  background: linear-gradient(to right, #ff009d, #ff8800);
+  margin-bottom: 30px;
+  border-bottom: 2px solid #00fff2;
+}
+
+nav #HeaderOcntentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav #HeaderOcntentWrapper #Logo {
+  width: 50px;
+}
+
+nav #HeaderOcntentWrapper #Logo img {
+  width: 100%;
+}
+
+nav #HeaderOcntentWrapper #headerTitle h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  color: white;
+  text-shadow: 1px 2px 1px black;
+}
+
+#Main {
+  padding: 30px 0px;
+}
+
+#Main #MainContentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 683px;
+  height: 350px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 50px 10px;
+  z-index: 8;
+  background: linear-gradient(45deg, rgba(255, 0, 157, 0.815), rgba(255, 136, 0, 0.863));
+}
+
+#Main #MainContentWrapper #InputField {
+  margin: 10px 0px;
+  width: 637.188px;
+  z-index: 8;
+}
+
+#Main #MainContentWrapper #InputField input {
+  width: 100%;
+  padding: 5px 5px;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.5rem;
+  -webkit-box-shadow: inset 1px 1px 4px #222222;
+          box-shadow: inset 1px 1px 4px #222222;
+  z-index: 8;
+  text-transform: capitalize;
+  border: none;
+}
+
+#Main #MainContentWrapper #InputField textarea {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  -webkit-box-shadow: inset 1px 1px 4px #222222;
+          box-shadow: inset 1px 1px 4px #222222;
+  z-index: 8;
+  border: none;
+}
+
+#Note {
+  padding: 30px 0px;
+}
+
+#Note #NoteContentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Note #NoteContentWrapper #SingleNote {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 1px 10px 0px #585858;
+          box-shadow: inset 0px 1px 10px 0px #585858;
+  margin: 20px 5px;
+  z-index: 8;
+}
+
+#Note #NoteContentWrapper #SingleNote h2 {
+  font-size: 3rem;
+  font-family: 'Yusei Magic', sans-serif;
+  text-align: center;
+  background: -webkit-gradient(linear, right top, left top, from(red), to(blue));
+  background: linear-gradient(to left, red, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 45px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#Note #NoteContentWrapper #SingleNote p {
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+#BG {
+  position: fixed;
+  bottom: 30%;
+  left: 0;
+  z-index: 1;
+  width: 200px;
+  margin: 20px 50px;
+}
+
+#BG img {
+  width: 100%;
+  opacity: 0.5;
+  -webkit-animation: Bg 3s ease infinite alternate;
+          animation: Bg 3s ease infinite alternate;
+}
+
+@-webkit-keyframes Bg {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes Bg {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+/*# sourceMappingURL=index.css.map */
